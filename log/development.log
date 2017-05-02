@@ -4728,3 +4728,452 @@ app/controllers/answers_controller.rb:18:in `create'
   Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Qué tipo de servicio realizas?"], ["value", 1], ["area", "Todas"], ["phase", "1"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "Describa la o las problemáticas que se van a abordar"], ["value", 1], ["area", "Todas"], ["phase", "1"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "Ingreso mensual de la población a la que se quiere llegar"], ["value", 1], ["area", "Todas"], ["phase", "1"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿A cuántas personas se estima que ayudarán al año?"], ["value", 1], ["area", "Todas"], ["phase", "1"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question", "¿Cuántas metas tiene el proyecto?"], ["value", 1], ["area", "Todas"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Cuántas actividades a realizar tiene?"], ["value", 1], ["area", "Todas"], ["phase", "1"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Cuántas personas se necesita para participar en cada actividad?"], ["value", 1], ["area", "Todas"], ["phase", "1"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Cuántos voluntarios internos?"], ["value", 1], ["area", "Todas"], ["phase", "1"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Cuántos voluntarios externos?"], ["value", 1], ["area", "Todas"], ["phase", "1"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Existe o ha existido una problemática que ha interferido en el desarrollo del proyecto?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Los beneficiarios colaboran en el proyecto?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Realizas algún tipo de evaluación del proyecto?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Ha habido cambios de enfoque en la problemática que se quiere desarrollar?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Cuáles considera que son las áreas de oportunidad del proyecto?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿A cuántas personas se ha ayudado en la implementación del proyecto?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Cuántas metas se han cumplido?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Hubo cambios en las actividades?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿Del 1 al 10 con cuánto éxito se realizaron las activdades?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿A cuántas personas se ha beneficiado con esta actividad?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("question", "value", "area", "phase", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["question", "¿En el siguiente espacio pon un link de drive/dropbox donde se encuentren los documentos que respalden la información de igual forma compartelo con el email de CCB?"], ["value", 1], ["area", "Todas"], ["phase", "2"], ["created_at", 2017-05-02 17:38:22 UTC], ["updated_at", 2017-05-02 17:38:22 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2017-05-02 12:38:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+Started GET "/" for ::1 at 2017-05-02 12:38:59 -0500
+Processing by WelcomeController#home as HTML
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (4.6ms)
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+Completed 200 OK in 1188ms (Views: 1166.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 1183ms (Views: 1169.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for ::1 at 2017-05-02 12:39:09 -0500
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+Completed 200 OK in 73ms (Views: 59.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers/new.3" for ::1 at 2017-05-02 12:39:20 -0500
+Processing by AnswersController#new as 
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 141ms (Views: 94.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/answers/new.5" for ::1 at 2017-05-02 12:39:24 -0500
+Processing by AnswersController#new as 
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 107ms (Views: 93.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/answers" for ::1 at 2017-05-02 12:39:29 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlXYhduCorzcXznCH1gADjxKKwuLze+xt8cQ1xyZGXOUhS4o3aqmudYaJwPW+EWep4mNZ7k0zp7rGa4BxEYnfg==", "answer"=>{"respuesta"=>"bien"}, "commit"=>"Guardar pregunta"}
+Unpermitted parameter: respuesta
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering answers/new.html.erb within layouts/application
+  Rendered answers/new.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `find' for nil:NilClass):
+    18: <p>
+    19: 
+    20:     <tr>
+    21:       <td><%= @preguntas.find(1).question %></td>
+    22:         <td><%= f.text_field :respuesta%></td><br>
+    23:     
+    24:         
+  
+app/views/answers/new.html.erb:21:in `block in _app_views_answers_new_html_erb___78219080151450078_70190035538760'
+app/views/answers/new.html.erb:3:in `_app_views_answers_new_html_erb___78219080151450078_70190035538760'
+app/controllers/answers_controller.rb:18:in `create'
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.3ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (109.4ms)
+Started GET "/answers" for ::1 at 2017-05-02 12:41:07 -0500
+Processing by AnswersController#index as HTML
+  Rendering answers/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  Rendered answers/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+Completed 200 OK in 93ms (Views: 70.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/answers" for ::1 at 2017-05-02 12:41:11 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlXYhduCorzcXznCH1gADjxKKwuLze+xt8cQ1xyZGXOUhS4o3aqmudYaJwPW+EWep4mNZ7k0zp7rGa4BxEYnfg==", "answer"=>{"respuesta"=>"bien"}, "commit"=>"Guardar pregunta"}
+Unpermitted parameter: respuesta
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering answers/new.html.erb within layouts/application
+  Rendered answers/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `find' for nil:NilClass):
+    18: <p>
+    19: 
+    20:     <tr>
+    21:       <td><%= @preguntas.find(1).question %></td>
+    22:         <td><%= f.text_field :respuesta%></td><br>
+    23:     
+    24:         
+  
+app/views/answers/new.html.erb:21:in `block in _app_views_answers_new_html_erb___78219080151450078_70190035649240'
+app/views/answers/new.html.erb:3:in `_app_views_answers_new_html_erb___78219080151450078_70190035649240'
+app/controllers/answers_controller.rb:19:in `create'
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.4ms)
+Started GET "/answers" for ::1 at 2017-05-02 12:42:52 -0500
+Processing by AnswersController#index as HTML
+  Rendering answers/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  Rendered answers/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/questions" for ::1 at 2017-05-02 12:42:56 -0500
+Processing by QuestionsController#index as HTML
+Started GET "/questions" for ::1 at 2017-05-02 12:42:56 -0500
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (6.1ms)
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 109ms (Views: 101.8ms | ActiveRecord: 0.2ms)
+
+
+  Rendered layouts/_navigation.html.erb (0.2ms)
+Completed 200 OK in 112ms (Views: 109.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/answers/new.1" for ::1 at 2017-05-02 12:42:59 -0500
+Processing by AnswersController#new as 
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 89ms (Views: 71.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/answers" for ::1 at 2017-05-02 12:43:02 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+P65FzO4keEQ/Rum9arZFDWyG8taT6ibEAyoZkYakVUmLk+6NZCV5Bq4BWc8CpyErnG9p2i2ibRM0hawnsWvWA==", "answer"=>{"respuesta"=>"bien"}, "commit"=>"Guardar pregunta"}
+Unpermitted parameter: respuesta
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering answers/new.html.erb within layouts/application
+  Rendered answers/new.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `find' for nil:NilClass):
+    18: <p>
+    19: 
+    20:     <tr>
+    21:       <td><%= @preguntas.find(request.path.split('.').last).question %></td>
+    22:         <td><%= f.text_field :respuesta%></td><br>
+    23:     
+    24:         
+  
+app/views/answers/new.html.erb:21:in `block in _app_views_answers_new_html_erb___78219080151450078_70190017482440'
+app/views/answers/new.html.erb:3:in `_app_views_answers_new_html_erb___78219080151450078_70190017482440'
+app/controllers/answers_controller.rb:19:in `create'
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.9ms)
+Started POST "/answers" for ::1 at 2017-05-02 12:43:31 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+P65FzO4keEQ/Rum9arZFDWyG8taT6ibEAyoZkYakVUmLk+6NZCV5Bq4BWc8CpyErnG9p2i2ibRM0hawnsWvWA==", "answer"=>{"respuesta"=>"bien"}, "commit"=>"Guardar pregunta"}
+Unpermitted parameter: respuesta
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering answers/new.html.erb within layouts/application
+  Rendered answers/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `find' for nil:NilClass):
+    18: <p>
+    19: 
+    20:     <tr>
+    21:       <td><%= @preguntas.find(request.path.split('.').last).question %></td>
+    22:         <td><%= f.text_field :respuesta%></td><br>
+    23:     
+    24:         
+  
+app/views/answers/new.html.erb:21:in `block in _app_views_answers_new_html_erb___78219080151450078_70189969971420'
+app/views/answers/new.html.erb:3:in `_app_views_answers_new_html_erb___78219080151450078_70189969971420'
+app/controllers/answers_controller.rb:19:in `create'
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.0ms)
+Started POST "/answers" for ::1 at 2017-05-02 12:44:20 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+P65FzO4keEQ/Rum9arZFDWyG8taT6ibEAyoZkYakVUmLk+6NZCV5Bq4BWc8CpyErnG9p2i2ibRM0hawnsWvWA==", "answer"=>{"respuesta"=>"bien"}, "commit"=>"Guardar pregunta"}
+Unpermitted parameter: respuesta
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Question with 'id'=/answers):
+  
+app/views/answers/new.html.erb:21:in `block in _app_views_answers_new_html_erb___78219080151450078_70189972242540'
+app/views/answers/new.html.erb:3:in `_app_views_answers_new_html_erb___78219080151450078_70189972242540'
+app/controllers/answers_controller.rb:19:in `create'
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.7ms)
+Started POST "/answers" for ::1 at 2017-05-02 12:45:17 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+P65FzO4keEQ/Rum9arZFDWyG8taT6ibEAyoZkYakVUmLk+6NZCV5Bq4BWc8CpyErnG9p2i2ibRM0hawnsWvWA==", "answer"=>{"respuesta"=>"bien"}, "commit"=>"Guardar pregunta"}
+Unpermitted parameter: respuesta
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 78ms (Views: 70.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/answers" for ::1 at 2017-05-02 12:45:20 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vncpqqTej1+ObY3LseUtCpWRxYmhJzgYBy2nAC1OalVgp98HovaLWoQokwp4RWiaDlJj5ZPeGTdb8xnW9ZFUWA==", "answer"=>{"respuesta"=>"afadfasdf"}, "commit"=>"Guardar pregunta"}
+Unpermitted parameter: respuesta
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 53ms (Views: 49.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/answers" for ::1 at 2017-05-02 12:45:57 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mysHdq9KOkRJqzjPTZLe44V6SVHHTAeuztKPlMt7Rb1F+/HbqWI+QUPuJg6EMptzHrnvPfW1JoGSDDFCE6R7sA==", "answer"=>{"respuesta"=>"bien"}, "commit"=>"Guardar pregunta"}
+Unpermitted parameter: respuesta
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 58ms (Views: 52.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/answers" for ::1 at 2017-05-02 12:46:02 -0500
+Processing by AnswersController#index as HTML
+  Rendering answers/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  Rendered answers/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 56ms (Views: 46.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/answers/new.1" for ::1 at 2017-05-02 12:46:21 -0500
+Processing by AnswersController#new as 
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 91ms (Views: 78.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/answers" for ::1 at 2017-05-02 12:46:27 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1xNMgjlM6op9zYyZs74ZCFOcB1jzbTwy/P5KA/94vVcJw7ovP2Tuj3eIklh6HlyYyF+hNMGUHR2gIPTVJ6eDWg==", "answer"=>{"answer"=>"bien gg"}, "commit"=>"Guardar pregunta"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "value", "question_id") VALUES (?, ?, ?)[0m  [["answer", "bien gg"], ["value", 1], ["question_id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/answers/1
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/answers/1" for ::1 at 2017-05-02 12:46:27 -0500
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering answers/show.html.erb within layouts/application
+  Rendered answers/show.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `texto_pregunta' for #<Question:0x007facc4806ba0>):
+    1: 
+    2: <p>
+    3:   <strong>Pregunta:</strong>
+    4:   <%= @pregunta.texto_pregunta %>
+    5: </p>
+    6:  
+    7: <p>
+  
+app/views/answers/show.html.erb:4:in `_app_views_answers_show_html_erb___2738535511237019339_70190003924000'
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.6ms)
+Started GET "/answers/1" for ::1 at 2017-05-02 12:46:51 -0500
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering answers/show.html.erb within layouts/application
+  Rendered answers/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 65ms (Views: 60.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for ::1 at 2017-05-02 12:47:03 -0500
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/new" for ::1 at 2017-05-02 12:47:08 -0500
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (24.2ms)
+  Rendered questions/new.html.erb within layouts/application (28.9ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 83ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for ::1 at 2017-05-02 12:47:26 -0500
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (2.4ms)
+  Rendered questions/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+

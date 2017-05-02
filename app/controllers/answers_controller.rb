@@ -10,6 +10,7 @@ class AnswersController < ApplicationController
   end 
     
     def create 
+        @preguntas = Question.all
         @respuesta = Answer.new(respuesta_params)
         @respuesta.question_id = 1
         @respuesta.value = 1
