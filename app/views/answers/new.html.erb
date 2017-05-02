@@ -9,7 +9,7 @@
         this article from being saved:
       </h2>
       <ul>
-        <% @answer.errors.full_messages.each do |msg| %>
+        <% @respuesta.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
       </ul>
@@ -18,7 +18,7 @@
 <p>
 
     <tr>
-      <td><%= @preguntas.find(request.path.split('.').last).texto_pregunta %></td>
+      <td><%= @preguntas.find(1).question %></td>
         <td><%= f.text_field :respuesta%></td><br>
     
         
