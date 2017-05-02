@@ -1,0 +1,34 @@
+<style>
+
+
+
+</style>
+
+<h1>Preguntas</h1>
+
+<%= link_to 'Nueva pregunta', new_pregunta_path %>
+
+
+
+
+
+<table>
+
+  <tr>
+    <th>Pregunta</th>
+    <th>Valor</th>
+    <th>Area</th>
+  </tr>
+ 
+    
+  <% @preguntas.each do |pregunta| %>
+    <tr>
+      <td><%= pregunta.texto_pregunta %></td>
+      <td><%= pregunta.valor %></td>
+      <td><%= pregunta.area %></td>
+      <td><%= link_to 'Mostrar', pregunta_path(pregunta) %></td>
+      <td><%= link_to 'Editar',     new_answer_path(pregunta), class: "btn btn-xs btn-primary" %></td>
+        <td><%= link_to 'Eliminar',pregunta_path(pregunta),method: :delete, data: {confirm: '¿Estás seguro de que deseas eliminar la pregunta? Esta acción no se puede deshacer'}, class: "btn btn-xs btn-danger"%></td>
+    </tr>
+  <% end %>
+</table>

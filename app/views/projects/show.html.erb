@@ -1,0 +1,56 @@
+<h2 align="center">Titulo: <%= @project.titulo %></h2>
+    <div class="well col-xs-8 col-xs-offset-2">
+     
+        <p>
+            <strong>Área:</strong>
+            <%= @project.area %>
+
+        </p>
+
+        <p>
+            <strong>Importe</strong>
+            <%= @project.importe %>
+        </p>
+
+        <p>
+            <strong>Periodo</strong>
+            <%= @project.periodo %>
+        </p>
+
+        <p>
+            <strong>Descripción</strong>
+            <%= @project.descripcion %>
+        </p>
+
+        <p>
+            <strong>Ubicación</strong>
+            <%= @project.ubicacion %>
+        </p>
+
+        <p>
+            <strong>Voluntarios</strong>
+            <%= @project.voluntarios %>
+        </p>
+
+        <p>
+            <strong>Problemática</strong>
+            <%= @project.problematica %>
+        </p>
+
+        <p>
+            <strong>Numero de personas que atienden </strong>
+            <%= @project.atiende_num_personas %>
+        </p>
+
+         <ul>
+             Creado por: 
+             <li><%= link_to @project.user.nombre_de_usuario, user_path(@project.user) if (@project.user) || current_user.admin?%></li>
+
+        </ul>
+
+                <div class="article-actions">
+                    <%= link_to 'Editar', edit_project_path(@project), class:"btn btn-xs btn-primary"%>
+                    <%= link_to 'Eliminar',project_path(@project),method: :delete, data: {confirm: '¿Estás seguro de que deseas eliminar el proyecto? Esta acción no se puede deshacer'}, class: "btn btn-xs btn-danger"%>
+                    <%= link_to 'Atras', projects_path, class:"btn btn-xs btn-success" %>
+                </div>
+    </div>

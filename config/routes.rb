@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :questions
     resources :answers
 
-    get 'registro', to: 'users#new'
+    get 'signup', to: 'users#new'
     resources :users, except:[:new]
     
     get 'login', to: 'sessions#new'

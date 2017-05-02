@@ -1,18 +1,18 @@
-class PreguntasController < ApplicationController
+class QuestionsController < ApplicationController
 	def index
-    	@preguntas = Pregunta.all
+    	@preguntas = Question.all
  	end
 
 	def show
-		@pregunta = Pregunta.find(params[:id])
+		@pregunta = Question.find(params[:id])
 	end
 
 	def new
-        @pregunta = Pregunta.new
+        @pregunta = Question.new
 	end
 
 	def create
-		@pregunta = Pregunta.new(pregunta_params)
+		@pregunta = Question.new(pregunta_params)
 		if @pregunta.save
 		    redirect_to @pregunta
 		else
@@ -20,11 +20,11 @@ class PreguntasController < ApplicationController
   		end
 	end
      def edit
-         @pregunta = Pregunta.find(params[:id])
+         @pregunta = Question.find(params[:id])
     end 
 
     def update
-	  @pregunta = Pregunta.find(params[:id])
+	  @pregunta = Question.find(params[:id])
 	  if @pregunta.update(pregunta_params)
 	    redirect_to @pregunta
 	  else
@@ -34,7 +34,7 @@ class PreguntasController < ApplicationController
     
     
      def destroy
-        @pregunta = Pregunta.find(params[:id])
+        @pregunta = Question.find(params[:id])
         @pregunta.destroy
         flash[:danger] = "Se ha borrado la pregunta"
         redirect_to preguntas_path
@@ -42,7 +42,7 @@ class PreguntasController < ApplicationController
     
 	private
 		def pregunta_params
-	    	params.require(:pregunta).permit(:texto_pregunta, :valor, :area)
+	    	params.require(:question).permit(:question, :value, :area)
 	  	end
 
 	

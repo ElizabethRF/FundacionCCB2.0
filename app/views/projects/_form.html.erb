@@ -1,0 +1,122 @@
+<%= stylesheet_link_tag "custom.css.scss" %>
+<% if @project.errors.any? %>
+    <div class="row">
+        <div class="col-xs-8">
+            <div class="panel panel-danger">
+                <div class="panel heading" id="rojo">
+                    <h2 class="panel-title">
+                        <%= pluralize(@project.errors.count, "errores") %>
+                        prohiben guardar el proyecto: 
+                    </h2>
+                    <div class="panel-body" id="rojo">
+                        <ul><% @project.errors.full_messages.each do |mensaje|%>
+                            <li><%= mensaje %></li>
+                            <% end %> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+        
+    
+<% end %>
+
+<div class="row">
+    <div class="col-xs-12">
+        <%= form_for @project do |f| %>
+            <div class="form-group">
+                <div class="control-label col-ms-2">
+                    <%= f.label :título %> 
+                </div> 
+                <div class="col-sm-8">
+                    <%= f.text_field :titulo, class:"form-control",placeholder:"titulo",autofocus:true %>
+                </div>    
+            </div>
+            
+        <br><br>
+            <div class="form-group">
+                <div class="control-label col-ms-2">
+                    <%= f.label :Área %> 
+                </div>
+                <div class="col-sm-8">
+                    <%= f.text_field :area, class:"form-control",placeholder:"Área" %>
+                </div> 
+            </div>    
+        <br><br>
+            <div class="form-group">
+                <div class="control-label col-ms-2">
+                    <%= f.label :importe %> 
+                </div>
+                <div class="col-sm-8">
+                    <%= f.number_field :importe, class:"form-control" %>
+                </div>
+            </div>    
+        <br><br>
+            <div class="form-group">
+                <div class="control-label col-ms-2">
+                    <%= f.label :periodo %> (inicio)
+                </div>   
+                <div class="col-sm-8">
+                    <%= f.date_field :periodo, class:"form-control"  %>
+                </div>
+            </div>
+        <br><br>
+            <div class="form-group">
+                <div class="control-label col-ms-2">
+                    <%= f.label :descripción %> 
+                </div>
+                <div class="col-sm-8">
+                    <%= f.text_area :descripcion,rows:10, class:"form-control"  %>
+                </div>
+            </div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+            <div class="form-group">
+                <div class="control-label col-ms-2">
+                    <%= f.label :ubicación %> 
+                </div>
+                <div class="col-sm-8">
+                    <%= f.text_field :ubicacion, class:"form-control"  %>
+                </div>
+            </div>    
+        <br><br>
+            <div class="form-group">
+                <div class="control-label col-ms-2">
+                    <%= f.label :voluntarios %> 
+                </div>
+                <div class="col-sm-8">
+                    <%= f.number_field :voluntarios, class:"form-control"  %>
+                </div>
+            </div>
+        <br><br>
+            <div class="form-group">
+                <div class="control-label col-ms-2">
+                    <%= f.label :problemática %> 
+                </div>
+                <div class="col-sm-8">
+                    <%= f.text_field :problematica, class:"form-control"  %>
+                </div>
+            </div>
+        <br><br>
+            <div class="form-group">
+                <div class="control-label col-ms-2">
+                    <%= f.label :atiende_num_personas %> 
+                </div>
+                <div class="col-sm-8">
+                    <%= f.number_field :atiende_num_personas, class:"form-control"  %>
+                </div>
+            </div>
+        <br><br>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-10">
+                    <%= f.submit :"Crear proyecto", class:'btn btn-primary btn-lg' %>
+                </div>
+            </div>    
+
+        <br><br>
+        <% end %>
+        <div class="col-sm-offset-2">
+        [<%= link_to 'Cancelar y regresar a la lista de proyectos', projects_path %>]
+            </div><br><br>
+    </div>
+</div> 

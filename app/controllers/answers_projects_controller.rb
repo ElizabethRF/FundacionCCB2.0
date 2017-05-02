@@ -1,0 +1,3 @@
+class AnswersProjectsController < ApplicationController
+
+end

@@ -1,0 +1,20 @@
+<h1>Respuestas</h1>
+<table>
+  <tr>
+    <th>Pregunta</th>
+    <th>Respuesta</th>
+    <th>Valor</th>
+  </tr>
+ 
+  <% @respuestas.each do |respuesta| %>
+    <tr>
+      <td><%= @pregunta.find(16).texto_pregunta %></td>
+      <td><%= respuesta.respuesta %></td>
+        <td><%= respuesta.valor %></td>
+      
+      <td><%= link_to 'Show', answer_path(respuesta) %></td>
+      <td><%= link_to 'Edit', edit_answer_path(respuesta), class: "btn btn-xs btn-primary" %></td>
+    
+    </tr>
+  <% end %>
+</table>

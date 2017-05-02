@@ -1,0 +1,22 @@
+<h1>Editar respuesta</h1>
+<%= form_for @respuesta do |f| %>
+    <p>
+    <% if @respuesta.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@respuesta.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @answer.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+        
+      <td><%= @preguntas.find(16).texto_pregunta %></td>
+        <td><%= f.text_field :respuesta%></td><br>
+
+        <%= f.submit "Change"%>
+<%end%>
