@@ -152,23 +152,23 @@ label.light {
         
           <legend><span class="number">1</span>Tu información básica</legend>
           <label>Nombre:</label>
-            <p><%= f.text_field :nombre%></p>
+            <p><%= f.text_field :name%></p>
           
         
         <label>Apellido paterno:</label>
-          <%= f.text_field :apellido_paterno%>
+          <%= f.text_field :last_name%>
           
         <label>Apellido materno:</label>
-          <%= f.text_field :apellido_materno%>
+          <%= f.text_field :second_last_name%>
 
         <label>Correo:</label>
-          <%= f.email_field :correo %>
+          <%= f.email_field :mail %>
 
         <label>Nombre de usuario:</label>
-          <%= f.text_field :nombre_de_usuario %>
+          <%= f.text_field :username %>
 
         <label>Teléfono:</label>
-          <%= f.text_field :numero_telefono %>
+          <%= f.text_field :telephone_number %>
 
         <label>Contraseña:</label>
           <%= f.password_field :password%>

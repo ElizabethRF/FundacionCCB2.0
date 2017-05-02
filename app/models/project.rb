@@ -9,7 +9,7 @@ class Project < ActiveRecord::Base
     validates :starting, presence: true
     validates :description, presence: true , length: {minimum: 10}
     validates :location, presence: true,  length: {minimum: 10,maximun:200 }
-    validates :voluntarios, presence: true , length: {minimum: 1,maximun:6}
+    validates :volunteers, presence: true , length: {minimum: 1,maximun:6}
     validates :problem, presence: true, length: {minimum: 5,maximun:50 }
     validates :serves_num_people, presence: true,  length: {minimum: 1,maximun:6 }
     validates :user_id, presence: true

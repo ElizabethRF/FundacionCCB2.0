@@ -1,6 +1,6 @@
 class User <ActiveRecord::Base
     has_many :projects, dependent: :destroy
-    before_save {self.correo = correo.downcase}
+    before_save {self.mail = mail.downcase}
     validates :name, presence: true
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
     

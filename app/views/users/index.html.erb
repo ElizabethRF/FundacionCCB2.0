@@ -2,7 +2,7 @@
 <%= will_paginate%>
 <% @users.each do |user|%>
     <ul>
-        <li><%= link_to user.nombre_de_usuario, user_path(user)%></li>
+        <li><%= link_to user.username, user_path(user)%></li>
         <li><small><%= pluralize(user.projects.count, "proyectos") if user.projects %></small></li>
         <% if logged_in? and current_user.admin? %>
              <li><%= link_to "Borrar usuario",user_path(user), method: :delete, data: {confirm: "¿Estás seguro de que quieres borrar al usuario y sus proyectos? Esta acción no se puede de hacer"} %></li>

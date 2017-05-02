@@ -100,9 +100,9 @@ h2.no-span {
 
 
 
-<h2 class="background">Bienvenido a la página de <b><%= @user.nombre %></b></h2>
-<h2 class="background">Nombre de usuario: <b><%= @user.nombre_de_usuario %></b></h2>
-<h2 class="background">Correo: <b><%= @user.correo %></b></h2><br><br>
+<h2 class="background">Bienvenido a la página de <b><%= @user.name %></b></h2>
+<h2 class="background">Nombre de usuario: <b><%= @user.username %></b></h2>
+<h2 class="background">Correo: <b><%= @user.mail %></b></h2><br><br>
 
 
 
@@ -117,18 +117,18 @@ h2.no-span {
                     <div class="well well-lg">
                         <div class="article-title">
                            
-                            <%= link_to project.titulo, project_path(project)%>
+                            <%= link_to project.title, project_path(project)%>
                         </div>
                         <div class="article-body">
                             <%= project.area%><br>
-                            <%= truncate(project.descripcion, length:30)%><br>
-                            <%= project.problematica%>
+                            <%= truncate(project.description, length:30)%><br>
+                            <%= project.problem%>
                         </div>    
                            <div class="article-actions">
                                 <%= link_to 'Editar', edit_project_path(project), class:"btn btn-xs btn-primary"%>
                                 <%= link_to 'Eliminar',project_path(project),method: :delete, data: {confirm: '¿Estás seguro de que deseas eliminar el proyecto? Esta acción no se puede deshacer'}, class: "btn btn-xs btn-danger"%>
                             </div>
-                            <td>Encargado: <%= project.user.nombre if( project.user) || current_user.admin? %></td>
+                            <td>Encargado: <%= project.user.name if( project.user) || current_user.admin? %></td>
                              
                     </div>
                 </div>

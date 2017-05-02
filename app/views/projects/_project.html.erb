@@ -9,14 +9,14 @@
 
         <% @obj.each do |project|%>
         <tr>
-            <td><%= project.titulo%></td>
+            <td><%= project.title%></td>
             <td><%= project.area%></td>
-            <td><%= project.descripcion%></td>
-            <td><%= project.problematica%></td>
+            <td><%= project.description%></td>
+            <td><%= project.problem%></td>
             <td><%= link_to 'Ver', project_path(project)%></td>
             <td><%= link_to 'Editar', edit_project_path(project) %></td>
             <td><%= link_to 'Eliminar',project_path(project),method: :delete, data: {confirm: '¿Estás seguro de que deseas eliminar el proyecto? Esta acción no se puede deshacer'}%></td>
-            <td>Encargado: <%= project.user.nombre if project.user%></td>
+            <td>Encargado: <%= project.user.name if project.user%></td>
         </tr>
         <% end %>
     </table>

@@ -30,7 +30,7 @@
                     <%= f.label :título %> 
                 </div> 
                 <div class="col-sm-8">
-                    <%= f.text_field :titulo, class:"form-control",placeholder:"titulo",autofocus:true %>
+                    <%= f.text_field :title, class:"form-control",placeholder:"titulo",autofocus:true %>
                 </div>    
             </div>
             
@@ -49,16 +49,25 @@
                     <%= f.label :importe %> 
                 </div>
                 <div class="col-sm-8">
-                    <%= f.number_field :importe, class:"form-control" %>
+                    <%= f.number_field :amount, class:"form-control" %>
                 </div>
             </div>    
         <br><br>
             <div class="form-group">
                 <div class="control-label col-ms-2">
-                    <%= f.label :periodo %> (inicio)
+                    <%= f.label :fecha_de_inicio %> (inicio)
                 </div>   
                 <div class="col-sm-8">
-                    <%= f.date_field :periodo, class:"form-control"  %>
+                    <%= f.date_field :starting, class:"form-control"  %>
+                </div>
+            </div>
+        <br><br>
+         <div class="form-group">
+                <div class="control-label col-ms-2">
+                    <%= f.label :fecha_de_fin %> (fin)
+                </div>   
+                <div class="col-sm-8">
+                    <%= f.date_field :ending, class:"form-control"  %>
                 </div>
             </div>
         <br><br>
@@ -67,7 +76,7 @@
                     <%= f.label :descripción %> 
                 </div>
                 <div class="col-sm-8">
-                    <%= f.text_area :descripcion,rows:10, class:"form-control"  %>
+                    <%= f.text_area :description,rows:10, class:"form-control"  %>
                 </div>
             </div>
         <br><br><br><br><br><br><br><br><br><br><br>
@@ -76,7 +85,7 @@
                     <%= f.label :ubicación %> 
                 </div>
                 <div class="col-sm-8">
-                    <%= f.text_field :ubicacion, class:"form-control"  %>
+                    <%= f.text_field :location, class:"form-control"  %>
                 </div>
             </div>    
         <br><br>
@@ -85,7 +94,7 @@
                     <%= f.label :voluntarios %> 
                 </div>
                 <div class="col-sm-8">
-                    <%= f.number_field :voluntarios, class:"form-control"  %>
+                    <%= f.number_field :volunteers, class:"form-control"  %>
                 </div>
             </div>
         <br><br>
@@ -94,7 +103,7 @@
                     <%= f.label :problemática %> 
                 </div>
                 <div class="col-sm-8">
-                    <%= f.text_field :problematica, class:"form-control"  %>
+                    <%= f.text_field :problem, class:"form-control"  %>
                 </div>
             </div>
         <br><br>
@@ -103,7 +112,7 @@
                     <%= f.label :atiende_num_personas %> 
                 </div>
                 <div class="col-sm-8">
-                    <%= f.number_field :atiende_num_personas, class:"form-control"  %>
+                    <%= f.number_field :serves_num_people, class:"form-control"  %>
                 </div>
             </div>
         <br><br>

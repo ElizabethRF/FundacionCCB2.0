@@ -1,4 +1,4 @@
-<h2 align="center">Titulo: <%= @project.titulo %></h2>
+<h2 align="center">Titulo: <%= @project.title %></h2>
     <div class="well col-xs-8 col-xs-offset-2">
      
         <p>
@@ -9,42 +9,43 @@
 
         <p>
             <strong>Importe</strong>
-            <%= @project.importe %>
+            <%= @project.amount %>
         </p>
 
         <p>
             <strong>Periodo</strong>
-            <%= @project.periodo %>
+            <%= @project.starting %>
+            <%= @project.ending %>
         </p>
 
         <p>
             <strong>Descripción</strong>
-            <%= @project.descripcion %>
+            <%= @project.description %>
         </p>
 
         <p>
             <strong>Ubicación</strong>
-            <%= @project.ubicacion %>
+            <%= @project.location %>
         </p>
 
         <p>
             <strong>Voluntarios</strong>
-            <%= @project.voluntarios %>
+            <%= @project.volunteers %>
         </p>
 
         <p>
             <strong>Problemática</strong>
-            <%= @project.problematica %>
+            <%= @project.problem %>
         </p>
 
         <p>
             <strong>Numero de personas que atienden </strong>
-            <%= @project.atiende_num_personas %>
+            <%= @project.serves_num_people %>
         </p>
 
          <ul>
              Creado por: 
-             <li><%= link_to @project.user.nombre_de_usuario, user_path(@project.user) if (@project.user) || current_user.admin?%></li>
+             <li><%= link_to @project.user.username, user_path(@project.user) if (@project.user) || current_user.admin?%></li>
 
         </ul>
 
