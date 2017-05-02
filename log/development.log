@@ -2683,3 +2683,318 @@ puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (107.0ms)
+Started GET "/" for ::1 at 2017-05-02 09:09:00 -0500
+Started GET "/" for ::1 at 2017-05-02 09:09:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (6.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (2.2ms)
+Completed 200 OK in 915ms (Views: 903.0ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 1518ms (Views: 1499.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logo.png" for ::1 at 2017-05-02 09:09:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logo.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered collection of /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (21.5ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.1ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (179.2ms)
+Started GET "/login" for ::1 at 2017-05-02 09:09:07 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (75.3ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 200ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-05-02 09:09:12 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MIesbLzreZEIQXyKIa7IveQRZKMXYH3tf8kj9+zHKLdw27XRUZiHqFCXLyer8jyT0ljol+UELjRlrcnHto94Pw==", "session"=>{"mail"=>"victor@ejemplo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."mail" = ? LIMIT ?[0m  [["mail", "victor@ejemplo.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 129ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/2" for ::1 at 2017-05-02 09:09:12 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."user_id" = ? LIMIT ? OFFSET ?[0m  [["user_id", 2], ["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 120ms (Views: 63.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-05-02 09:09:15 -0500
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2017-05-02 09:09:15 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered projects/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 68ms (Views: 50.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/questions" for ::1 at 2017-05-02 09:09:21 -0500
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.2ms)
+Completed 200 OK in 89ms (Views: 65.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users" for ::1 at 2017-05-02 09:09:25 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered users/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+Completed 200 OK in 70ms (Views: 55.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for ::1 at 2017-05-02 09:09:29 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VV7mKPDcOp4hRp3aGJH5zGKehKnPlFkCN405ELrQzaaLjhCF9vQ+mysDgxvRMbxc+V0ixf1teC1rU4fGYg/zqw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-02 09:09:29 -0500
+Processing by WelcomeController#home as HTML
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logo.png" for ::1 at 2017-05-02 09:09:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/logo.png"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered collection of /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (10.4ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (147.1ms)
+Started GET "/signup" for ::1 at 2017-05-02 09:09:33 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.3ms)
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 69ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-05-02 09:09:50 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3qqvVJG2IrRaJ0T6SlQQCS/cM89qqezWc7oW1ajavcbBhQ7Y2Noe5hvCv6qBxQp2yydqm0GdSoUjSj2aQ9yfTA==", "user"=>{"name"=>"Elizabeth", "last_name"=>"Rodríguez", "second_last_name"=>"Fallas", "mail"=>"elizabeth@ejemplo.com", "username"=>"elizabethrf", "telephone_number"=>"5555555555", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+Unpermitted parameter: password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."mail") = LOWER(?) LIMIT ?[0m  [["mail", "elizabeth@ejemplo.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "elizabethrf"], ["LIMIT", 1]]
+  [1m[35mSQL (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "mail", "telephone_number", "last_name", "second_last_name", "username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Elizabeth"], ["mail", "elizabeth@ejemplo.com"], ["telephone_number", "5555555555"], ["last_name", "Rodríguez"], ["second_last_name", "Fallas"], ["username", "elizabethrf"], ["password_digest", "$2a$10$fEwOwsC0coNxaV.PnRiTfegx7/WiUlMGiaYuCG4PefA0dSRmLvAba"], ["created_at", 2017-05-02 14:09:50 UTC], ["updated_at", 2017-05-02 14:09:50 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 126ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/users/3" for ::1 at 2017-05-02 09:09:50 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."user_id" = ? LIMIT ? OFFSET ?[0m  [["user_id", 3], ["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 3]]
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 60ms (Views: 55.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-05-02 09:09:57 -0500
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2017-05-02 09:09:57 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering projects/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  Rendered projects/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 56ms (Views: 52.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-05-02 09:10:02 -0500
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (79.7ms)
+  Rendered projects/new.html.erb within layouts/application (83.9ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 161ms (Views: 140.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stylesheets/custom.css.scss.css" for ::1 at 2017-05-02 09:10:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/custom.css.scss.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (14.7ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (175.5ms)
+Started POST "/projects" for ::1 at 2017-05-02 09:10:45 -0500
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qGlmljZLsrecSonL6vqydgR1JYN/8IJtSL2FDXlaohpEYmVMir1AdsoBwtMoGRTmYlAq2KM86kMCmk+oJy4W0A==", "project"=>{"title"=>"Lechugas orgánicas", "area"=>"Alimentación ", "amount"=>"1", "starting"=>"2017-01-01", "ending"=>"2018-02-01", "description"=>"las lechugas son muy importantes para la alimentación, por eso hay que plantarlas", "location"=>"tlalplan, ciudad de méxico, méxico,el mundo", "volunteers"=>"2", "problem"=>"alimentación", "serves_num_people"=>"2"}, "commit"=>"Crear proyecto"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("area", "amount", "starting", "ending", "description", "location", "volunteers", "problem", "serves_num_people", "title", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["area", "Alimentación "], ["amount", 0.1e1], ["starting", 2017-01-01 00:00:00 UTC], ["ending", 2018-02-01 00:00:00 UTC], ["description", "las lechugas son muy importantes para la alimentación, por eso hay que plantarlas"], ["location", "tlalplan, ciudad de méxico, méxico,el mundo"], ["volunteers", 2], ["problem", "alimentación"], ["serves_num_people", 2], ["title", "Lechugas orgánicas"], ["user_id", 3], ["created_at", 2017-05-02 14:10:45 UTC], ["updated_at", 2017-05-02 14:10:45 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/projects/2
+Completed 302 Found in 27ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/projects/2" for ::1 at 2017-05-02 09:10:45 -0500
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 62ms (Views: 51.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects" for ::1 at 2017-05-02 09:10:49 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering projects/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered projects/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 63ms (Views: 57.9ms | ActiveRecord: 0.5ms)
+
+
