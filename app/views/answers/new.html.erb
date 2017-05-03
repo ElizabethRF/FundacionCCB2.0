@@ -18,7 +18,7 @@
 <p>
 
     <tr>
-      <td><%= @preguntas.find(1).question %></td>
+      <td><%= @preguntas.find(request.path.split('.').last).question %></td>
         <td><%= f.text_field :answer%></td><br>
     
         

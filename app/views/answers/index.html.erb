@@ -8,7 +8,7 @@
  
   <% @respuestas.each do |respuesta| %>
     <tr>
-      <td><%= @pregunta.find(16).question %></td>
+      <td><%= @pregunta.find(respuesta.question_id).question %></td>
       <td><%= respuesta.answer %></td>
         <td><%= respuesta.value %></td>
       

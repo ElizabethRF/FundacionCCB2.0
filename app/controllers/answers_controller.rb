@@ -1,18 +1,21 @@
 class AnswersController < ApplicationController
+   @@id = 3
     def show 
         @respuesta = Answer.find(params[:id])
-        @pregunta = Question.find(16)
+        @pregunta = Question.find(@respuesta.question_id)
     end 
     
     def new 
       @respuesta = Answer.new
         @preguntas = Question.all
+        @@id = request.original_url.split('.').last
+        
   end 
     
     def create 
         @preguntas = Question.all
         @respuesta = Answer.new(respuesta_params)
-        @respuesta.question_id = 1
+        @respuesta.question_id = @@id
         @respuesta.value = 1
         if @respuesta.save
             redirect_to @respuesta
