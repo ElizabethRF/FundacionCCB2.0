@@ -15,8 +15,8 @@
     </div>
   <% end %>
         
-      <td><%= @preguntas.find(16).texto_pregunta %></td>
-        <td><%= f.text_field :respuesta%></td><br>
+      <td><%= @preguntas.find(16).question %></td>
+        <td><%= f.text_field :answer%></td><br>
 
         <%= f.submit "Change"%>
 <%end%>

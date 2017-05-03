@@ -8,9 +8,9 @@
  
   <% @respuestas.each do |respuesta| %>
     <tr>
-      <td><%= @pregunta.find(16).texto_pregunta %></td>
-      <td><%= respuesta.respuesta %></td>
-        <td><%= respuesta.valor %></td>
+      <td><%= @pregunta.find(16).question %></td>
+      <td><%= respuesta.answer %></td>
+        <td><%= respuesta.value %></td>
       
       <td><%= link_to 'Show', answer_path(respuesta) %></td>
       <td><%= link_to 'Edit', edit_answer_path(respuesta), class: "btn btn-xs btn-primary" %></td>

@@ -5177,3 +5177,616 @@ Processing by QuestionsController#new as HTML
 Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2017-05-02 12:53:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 404 Not Found in 33ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  
+app/controllers/application_controller.rb:7:in `current_user'
+app/controllers/application_controller.rb:11:in `logged_in?'
+app/controllers/welcome_controller.rb:3:in `home'
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.8ms)
+Started GET "/" for ::1 at 2017-05-02 12:55:16 -0500
+Processing by WelcomeController#home as HTML
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 3564ms (Views: 3561.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2017-05-02 12:55:33 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-05-02 12:55:37 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UrRgOPNDnLK7pxZL6ijAJQ2TBcZKVKMh5A442fxsiQjl6rKuxe7NowqxrDddJ41wohXWqNWNtTuWSwuu3leyFA==", "session"=>{"mail"=>"carlos@ejemplo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."mail" = ? LIMIT ?[0m  [["mail", "carlos@ejemplo.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 73ms (Views: 71.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2017-05-02 12:55:44 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MpNo6EgoR4FbPu+8ewWRSqYqKzEUxX7qXrIdZq3+vldFSc5uXHrCdFHsILf7DtIOM4mUAdcI8wn6b/xNfrjmDg==", "session"=>{"mail"=>"carlos@ejemplo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."mail" = ? LIMIT ?[0m  [["mail", "carlos@ejemplo.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/login" for ::1 at 2017-05-02 12:57:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 302ms (Views: 291.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2017-05-02 12:57:57 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2017-05-02 12:58:04 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 75ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2017-05-02 12:58:11 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 129ms (Views: 81.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users" for ::1 at 2017-05-02 12:58:35 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UNVsCGhWvqN8+pGWhwO8ccKYvk8XZ2ZEKKFkMMh6PeNAyYxICQrVDjLUeMpJNDQ1SKgUMcrCqTaiQqiynEg/vA==", "user"=>{"name"=>"carlos", "last_name"=>"carlos", "second_last_name"=>"carlos", "mail"=>"carlos@ejemplo.com", "username"=>"carlos", "telephone_number"=>"234234234234234", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+Unpermitted parameter: password_confirmation
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."mail") = LOWER(?) LIMIT ?[0m  [["mail", "carlos@ejemplo.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "carlos"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "mail", "telephone_number", "last_name", "second_last_name", "username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "carlos"], ["mail", "carlos@ejemplo.com"], ["telephone_number", "234234234234234"], ["last_name", "carlos"], ["second_last_name", "carlos"], ["username", "carlos"], ["password_digest", "$2a$10$yWberqlaPsNn1/mAbEjqweyoPGJWRNjw3L.H2nQKQoWGgQGnvifUy"], ["created_at", 2017-05-02 17:58:35 UTC], ["updated_at", 2017-05-02 17:58:35 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 92ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/4" for ::1 at 2017-05-02 12:58:35 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."user_id" = ? LIMIT ? OFFSET ?[0m  [["user_id", 4], ["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 119ms (Views: 70.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/questions" for ::1 at 2017-05-02 12:59:01 -0500
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (18.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.0ms)
+Completed 200 OK in 96ms (Views: 74.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/answers/new.1" for ::1 at 2017-05-02 12:59:06 -0500
+Processing by AnswersController#new as 
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.1ms)
+Completed 200 OK in 129ms (Views: 96.8ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/answers" for ::1 at 2017-05-02 12:59:16 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XmMhPW1oHp219PU1yFikRCIePPggDjNpPYajQzH+pC0puYe7eTqbaL8mOj5IU+cAt72DyOPDvoqZW0Jo4rj8dA==", "answer"=>{"answer"=>"komo eztaz"}, "commit"=>"Guardar pregunta"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "value", "question_id") VALUES (?, ?, ?)[0m  [["answer", "komo eztaz"], ["value", 1], ["question_id", 1]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/answers/2
+Completed 302 Found in 22ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/answers/2" for ::1 at 2017-05-02 12:59:16 -0500
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering answers/show.html.erb within layouts/application
+  Rendered answers/show.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 98ms (Views: 92.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/answers/" for ::1 at 2017-05-02 12:59:31 -0500
+Processing by AnswersController#index as HTML
+  Rendering answers/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendered answers/index.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `texto_pregunta' for #<Question:0x007fd51f9247e8>):
+     8:  
+     9:   <% @respuestas.each do |respuesta| %>
+    10:     <tr>
+    11:       <td><%= @pregunta.find(16).texto_pregunta %></td>
+    12:       <td><%= respuesta.respuesta %></td>
+    13:         <td><%= respuesta.valor %></td>
+    14:       
+  
+app/views/answers/index.html.erb:11:in `block in _app_views_answers_index_html_erb__4514069604578263295_70276657205200'
+app/views/answers/index.html.erb:9:in `_app_views_answers_index_html_erb__4514069604578263295_70276657205200'
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.0ms)
+Started GET "/" for ::1 at 2017-05-02 13:01:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 49ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/projects" for ::1 at 2017-05-02 13:01:39 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering projects/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered projects/index.html.erb within layouts/application (52.8ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 399ms (Views: 378.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/answers" for ::1 at 2017-05-02 13:01:45 -0500
+Processing by AnswersController#index as HTML
+  Rendering answers/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendered answers/index.html.erb within layouts/application (52.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (1.9ms)
+Completed 200 OK in 151ms (Views: 124.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/answers/1/edit" for ::1 at 2017-05-02 13:01:50 -0500
+Processing by AnswersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnswer Load (0.9ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering answers/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendered answers/edit.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `texto_pregunta' for #<Question:0x007f9d820fd9e0>):
+    15:     </div>
+    16:   <% end %>
+    17:         
+    18:       <td><%= @preguntas.find(16).texto_pregunta %></td>
+    19:         <td><%= f.text_field :respuesta%></td><br>
+    20: 
+    21:         <%= f.submit "Change"%>
+  
+app/views/answers/edit.html.erb:18:in `block in _app_views_answers_edit_html_erb__4118137986280147730_70157226234120'
+app/views/answers/edit.html.erb:2:in `_app_views_answers_edit_html_erb__4118137986280147730_70157226234120'
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/carloseduardomunozgonzalez/.rvm/gems/ruby-2.2.6@global/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.6ms)
+Started GET "/answers/1/edit" for ::1 at 2017-05-02 13:03:12 -0500
+Processing by AnswersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering answers/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendered answers/edit.html.erb within layouts/application (17.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (7.1ms)
+Completed 200 OK in 109ms (Views: 106.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for ::1 at 2017-05-02 13:03:16 -0500
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (20.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.4ms)
+Completed 200 OK in 118ms (Views: 113.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/answers/new.1" for ::1 at 2017-05-02 13:03:18 -0500
+Processing by AnswersController#new as 
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.1ms)
+Completed 200 OK in 99ms (Views: 79.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/answers" for ::1 at 2017-05-02 13:03:28 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EPfdoJDTpbFfLZq8PhRg/rIJ8cF8AQ5sRSrVKZrRIHpnLXsmhIEgRFX/Vbe+HyO6J6pO8b/Mg4/h9zQCSZd4Iw==", "answer"=>{"answer"=>"asdads"}, "commit"=>"Guardar pregunta"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "value", "question_id") VALUES (?, ?, ?)[0m  [["answer", "asdads"], ["value", 1], ["question_id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/answers/3
+Completed 302 Found in 13ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/answers/3" for ::1 at 2017-05-02 13:03:28 -0500
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering answers/show.html.erb within layouts/application
+  Rendered answers/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 78ms (Views: 71.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-02 20:25:17 -0500
+Started GET "/" for ::1 at 2017-05-02 20:25:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#home as HTML
+Processing by WelcomeController#home as HTML
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (3.7ms)
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.erb (2.6ms)
+Completed 200 OK in 1152ms (Views: 1131.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 1176ms (Views: 1155.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-02 20:25:27 -0500
+Processing by WelcomeController#home as HTML
+  Rendering welcome/home.html.erb within layouts/application
+  Rendered welcome/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2017-05-02 20:25:29 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (32.1ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 87ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-05-02 20:25:33 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yez54olhNFghetKVuAAsQkSS5v9aAKKWv1Muefv7MewhsOBfZBLKYXmsgTgyXNhscttqy6hk8U+lN8RJobNhZA==", "session"=>{"mail"=>"victor@ejemplo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."mail" = ? LIMIT ?[0m  [["mail", "victor@ejemplo.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 125ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2" for ::1 at 2017-05-02 20:25:33 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."user_id" = ? LIMIT ? OFFSET ?[0m  [["user_id", 2], ["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 115ms (Views: 62.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-02 20:25:36 -0500
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-05-02 20:25:36 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered projects/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 75ms (Views: 68.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/projects/new" for ::1 at 2017-05-02 20:25:37 -0500
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (69.0ms)
+  Rendered projects/new.html.erb within layouts/application (75.7ms)
+  Rendered layouts/_navigation.html.erb (2.7ms)
+Completed 200 OK in 133ms (Views: 125.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/stylesheets/custom.css.scss.css" for ::1 at 2017-05-02 20:25:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/custom.css.scss.css"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered collection of /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (20.9ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.6ms)
+  Rendering /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/ElizabethRF/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (160.5ms)
+Started GET "/questions" for ::1 at 2017-05-02 20:25:39 -0500
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (12.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (3.9ms)
+Completed 200 OK in 81ms (Views: 62.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/answers/new.1" for ::1 at 2017-05-02 20:25:41 -0500
+Processing by AnswersController#new as 
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.5ms)
+Completed 200 OK in 107ms (Views: 77.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/answers" for ::1 at 2017-05-02 20:26:41 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QUhwMx2uwqS9nIAPZES0sPApFpXSe5sWws8wVwLuT0ifmIaeG4bGobfZns6t5PEga+qw+eCCujmeEY6B2jFxRQ==", "answer"=>{"answer"=>"hola"}, "commit"=>"Guardar pregunta"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "value", "question_id") VALUES (?, ?, ?)[0m  [["answer", "hola"], ["value", 1], ["question_id", 1]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/answers/4
+Completed 302 Found in 15ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/answers/4" for ::1 at 2017-05-02 20:26:41 -0500
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering answers/show.html.erb within layouts/application
+  Rendered answers/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.3ms)
+Completed 200 OK in 74ms (Views: 66.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/answers/" for ::1 at 2017-05-02 20:26:44 -0500
+Processing by AnswersController#index as HTML
+  Rendering answers/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendered answers/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (3.3ms)
+Completed 200 OK in 78ms (Views: 67.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/answers/1/edit" for ::1 at 2017-05-02 20:26:46 -0500
+Processing by AnswersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering answers/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendered answers/edit.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (1.9ms)
+Completed 200 OK in 58ms (Views: 44.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/answers/2/edit" for ::1 at 2017-05-02 20:26:51 -0500
+Processing by AnswersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering answers/edit.html.erb within layouts/application
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendered answers/edit.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.0ms)
+Completed 200 OK in 59ms (Views: 53.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for ::1 at 2017-05-02 20:26:53 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered users/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 61ms (Views: 52.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/questions" for ::1 at 2017-05-02 20:26:55 -0500
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.1ms)
+Completed 200 OK in 68ms (Views: 57.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/new" for ::1 at 2017-05-02 20:31:03 -0500
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/application
+  Rendered questions/_form.html.erb (3.7ms)
+  Rendered questions/new.html.erb within layouts/application (13.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.1ms)
+Completed 200 OK in 82ms (Views: 72.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/answers" for ::1 at 2017-05-02 20:31:09 -0500
+Processing by AnswersController#index as HTML
+  Rendering answers/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendered answers/index.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (3.0ms)
+Completed 200 OK in 77ms (Views: 70.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/answers/new" for ::1 at 2017-05-02 20:31:17 -0500
+Processing by AnswersController#new as HTML
+  Rendering answers/new.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered answers/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.8ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/answers" for ::1 at 2017-05-02 20:31:20 -0500
+Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cWn3OIfspXqAAlclHCKgJ6j+D/NKnfLcdpoFtqBUewSvuQGVgcShf4pHSeTVguW3Mz2pn3hk0/MqRLtgeItFCQ==", "answer"=>{"answer"=>"as"}, "commit"=>"Guardar pregunta"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "answers" ("answer", "value", "question_id") VALUES (?, ?, ?)[0m  [["answer", "as"], ["value", 1], ["question_id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/answers/5
+Completed 302 Found in 9ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/answers/5" for ::1 at 2017-05-02 20:31:20 -0500
+Processing by AnswersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" WHERE "answers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering answers/show.html.erb within layouts/application
+  Rendered answers/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_navigation.html.erb (2.9ms)
+Completed 200 OK in 71ms (Views: 68.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-05-02 20:31:25 -0500
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/projects" for ::1 at 2017-05-02 20:31:25 -0500
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" LIMIT ? OFFSET ?[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered projects/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation.html.erb (2.2ms)
+Completed 200 OK in 58ms (Views: 52.4ms | ActiveRecord: 0.5ms)
+
+
