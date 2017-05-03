@@ -5,9 +5,9 @@
 </style>
 
 <h1>Preguntas</h1>
-
+<% if current_user.admin? %>
 <%= link_to 'Nueva pregunta', new_question_path %>
-
+<%end%>
 
 
 

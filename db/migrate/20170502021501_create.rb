@@ -30,7 +30,7 @@ class Create < ActiveRecord::Migration[5.0]
       create_table :answers do |t|
          t.text :answer 
          t.integer :value
-         t.references :question, foreign_key: true
+         t.integer :question_id
       end 
  
       

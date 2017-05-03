@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 20170503124639) do
     t.text    "answer"
     t.integer "value"
     t.integer "question_id"
-    t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
   create_table "answers_projects", force: :cascade do |t|

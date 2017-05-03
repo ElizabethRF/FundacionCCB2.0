@@ -53,7 +53,7 @@ class QuestionsController < ApplicationController
     end 
     
     def require_project
-        if current_user.projects.count <1 && current_user.admin?
+        if current_user.projects.count <1 && !current_user.admin?
             redirect_to root_path
         end 
     end 
