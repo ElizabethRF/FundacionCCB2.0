@@ -26,9 +26,11 @@
       <td><%= pregunta.question %></td>
       <td><%= pregunta.value %></td>
       <td><%= pregunta.area %></td>
-      <td><%= link_to 'Mostrar', question_path(pregunta) %></td>
       <td><%= link_to 'Responder',     new_answer_path(pregunta), class: "btn btn-xs btn-primary" %></td>
+        <%if current_user.admin? %>  
+        <td><%= link_to 'Mostrar', question_path(pregunta) %></td>
         <td><%= link_to 'Eliminar',question_path(pregunta),method: :delete, data: {confirm: '¿Estás seguro de que deseas eliminar la pregunta? Esta acción no se puede deshacer'}, class: "btn btn-xs btn-danger"%></td>
+        <%end%>
     </tr>
   <% end %>
 </table>

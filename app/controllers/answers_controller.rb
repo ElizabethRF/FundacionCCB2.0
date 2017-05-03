@@ -1,5 +1,6 @@
 class AnswersController < ApplicationController
-   @@id = 3
+   before_action :require_user
+    @@id = 3
     def show 
         @respuesta = Answer.find(params[:id])
         @pregunta = Question.find(@respuesta.question_id)

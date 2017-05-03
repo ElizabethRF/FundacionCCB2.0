@@ -13,7 +13,9 @@
         <td><%= respuesta.value %></td>
       
       <td><%= link_to 'Show', answer_path(respuesta) %></td>
+         <%if current_user.admin? %>  
       <td><%= link_to 'Edit', edit_answer_path(respuesta), class: "btn btn-xs btn-primary" %></td>
+        <%end%>
     
     </tr>
   <% end %>

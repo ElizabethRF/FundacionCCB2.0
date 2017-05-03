@@ -50,8 +50,10 @@
         </ul>
 
                 <div class="article-actions">
+                    <%if current_user.admin? %>  
                     <%= link_to 'Editar', edit_project_path(@project), class:"btn btn-xs btn-primary"%>
                     <%= link_to 'Eliminar',project_path(@project),method: :delete, data: {confirm: '¿Estás seguro de que deseas eliminar el proyecto? Esta acción no se puede deshacer'}, class: "btn btn-xs btn-danger"%>
+                    <%end%>
                     <%= link_to 'Atras', projects_path, class:"btn btn-xs btn-success" %>
                 </div>
     </div>

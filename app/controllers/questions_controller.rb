@@ -1,5 +1,8 @@
 class QuestionsController < ApplicationController
-	def index
+    before_action :require_user
+    before_action :require_project
+    
+    def index
     	@preguntas = Question.all
  	end
 
@@ -38,6 +41,21 @@ class QuestionsController < ApplicationController
         @pregunta.destroy
         flash[:danger] = "Se ha borrado la pregunta"
         redirect_to preguntas_path
+    end 
+    
+    
+    def require_same_user 
+        set_project
+        if current_user != @project.user && !@current_user.admin?
+            flash[:danger] = "Solo puedes editar tus artículos"
+            redirect_to root_path
+        end 
+    end 
+    
+    def require_project
+        if current_user.projects.count <1 && current_user.admin?
+            redirect_to root_path
+        end 
     end 
     
 	private
