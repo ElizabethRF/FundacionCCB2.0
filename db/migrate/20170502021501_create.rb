@@ -26,13 +26,6 @@ class Create < ActiveRecord::Migration[5.0]
           t.references :user, foreign_key: true
           t.timestamps
       end 
-   
-      create_table :answers do |t|
-         t.text :answer 
-         t.integer :value
-         t.integer :question_id
-      end 
- 
       
       create_table :questions do |t|
           t.string :question
@@ -41,6 +34,13 @@ class Create < ActiveRecord::Migration[5.0]
           t.text :phase
           t.timestamps
       end    
+      
+      
+      create_table :answers do |t|
+         t.text :answer 
+         t.integer :value
+          t.references :question, foreign_key: true
+      end 
       
       create_join_table :projects, :answers do |t|
         t.index :project_id
