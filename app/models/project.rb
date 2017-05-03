@@ -1,7 +1,7 @@
 class Project < ActiveRecord::Base
    belongs_to :user
-    has_many :answer_project
-    has_many :answers, through: :answer_project
+    has_many :answers_projects
+    has_many :answers, through: :answers_projects
     
     validates :title, presence: true, length: {minimum: 5 ,maximun:50 }
     validates :area, presence: true, length: {minimum: 5,maximun:50 }
