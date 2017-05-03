@@ -10543,3 +10543,5 @@ Processing by WelcomeController#home as HTML
 Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.0ms)
 
 
+  [1m[36mAnswer Load (0.5ms)[0m  [1m[34mSELECT  "answers".* FROM "answers" ORDER BY "answers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
