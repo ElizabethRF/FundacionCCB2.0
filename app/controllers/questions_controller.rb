@@ -6,7 +6,11 @@ class QuestionsController < ApplicationController
     
     def index
     	@preguntas = Question.all
-        set_current_project(request.original_url.split('.').last)
+        @project_id = request.original_url.split('.').last
+        set_current_project(@project_id)
+        if(@project_id != "0")
+            @proyecto = Project.find(@project_id)
+        end 
  	end
 
 	def show

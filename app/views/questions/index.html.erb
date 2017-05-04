@@ -26,14 +26,21 @@
       <td><%= pregunta.question %></td>
       <td><%= pregunta.value %></td>
       <td><%= pregunta.area %></td>
-    <%if request.path.split('.').last != "0"%>
-      <td><%= link_to 'Responder',     new_answer_path(pregunta), class: "btn btn-xs btn-primary" %></td>
+    <%if @project_id  != "0"%>
+       
+         <%if pregunta.answers.count >0 && @proyecto.answers.exists?(question_id: pregunta.id) %>
+        
+        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+            <%else%>
+        <td><%= link_to 'Responder',     new_answer_path(pregunta), class: "btn btn-xs btn-primary" %></td>
         <%end%>
-        <%if current_user.admin? && request.path.split('.').last == "0"%>  
+        <%end%>
+        <%if current_user.admin? && @project_id  == "0"%>  
         <td><%= link_to 'Mostrar', question_path(pregunta), class: "btn btn-xs btn-info" %></td>
         <td><%= link_to 'Editar', edit_question_path(pregunta) , class: "btn btn-xs btn-warning"%></td>
         <td><%= link_to 'Eliminar',question_path(pregunta),method: :delete, data: {confirm: '¿Estás seguro de que deseas eliminar la pregunta? Esta acción no se puede deshacer'}, class: "btn btn-xs btn-danger"%></td>
         <%end%>
+        
     </tr>
   <% end %>
 </table>
