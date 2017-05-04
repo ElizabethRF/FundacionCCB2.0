@@ -1,9 +1,12 @@
 class QuestionsController < ApplicationController
     before_action :require_user
     before_action :require_project
+    before_action :require_user, except: [:new, :create]
+    before_action :current_project, only: [:index]
     
     def index
     	@preguntas = Question.all
+        set_current_project(request.original_url.split('.').last)
  	end
 
 	def show

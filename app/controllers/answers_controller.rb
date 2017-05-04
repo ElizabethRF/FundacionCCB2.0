@@ -1,5 +1,6 @@
 class AnswersController < ApplicationController
    before_action :require_user
+   before_action :get_current_project
     @@id = 3
     def show 
         @respuesta = Answer.find(params[:id])
@@ -19,6 +20,12 @@ class AnswersController < ApplicationController
         @respuesta.question_id = @@id
         @respuesta.value = 1
         if @respuesta.save
+            @respuesta_proyecto = AnswersProject.new
+            @respuesta_proyecto.project_id = get_current_project
+            @respuesta_proyecto.answer_id = @respuesta.id
+            @respuesta_proyecto.created_at = Time.now
+            @respuesta_proyecto.updated_at = Time.now
+            @respuesta_proyecto.save
             redirect_to @respuesta
         else render 'new'
         end
