@@ -50,6 +50,8 @@
         </ul>
 
                 <div class="article-actions">
+                    <%= link_to 'Responder encuesta', questions_path(@project), class:"btn btn-xs btn-info"%>
+                    <%= link_to 'Ver respuestas', answers_path(@project), class:"btn btn-xs btn-default"%>
                     <%if current_user.admin? %>  
                     <%= link_to 'Editar', edit_project_path(@project), class:"btn btn-xs btn-primary"%>
                     <%= link_to 'Eliminar',project_path(@project),method: :delete, data: {confirm: '¿Estás seguro de que deseas eliminar el proyecto? Esta acción no se puede deshacer'}, class: "btn btn-xs btn-danger"%>

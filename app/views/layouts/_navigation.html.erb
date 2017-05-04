@@ -21,8 +21,8 @@
         
         <li><%= link_to "Nuevo Proyecto", new_project_path,id:"logo", class:"active"%></li>
            
-          <%if current_user.projects.count >0 || current_user.admin%>
-          <li><%= link_to 'Preguntas', questions_path,id:"logo", class:"active"%></li>
+          <%if  current_user.admin%>
+          <li><%= link_to 'Preguntas', questions_path(0),id:"logo", class:"active"%></li>
           <%end%>
           <%if current_user.admin%>
           <li><%= link_to 'Usuarios', users_path,id:"logo", class:"active"%></li>

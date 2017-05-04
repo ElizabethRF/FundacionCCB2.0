@@ -6,17 +6,22 @@
     <th>Valor</th>
   </tr>
  
-  <% @respuestas.each do |respuesta| %>
-    <tr>
-      <td><%= @pregunta.find(respuesta.question_id).question %></td>
-      <td><%= respuesta.answer %></td>
-        <td><%= respuesta.value %></td>
-      
-      <td><%= link_to 'Show', answer_path(respuesta) %></td>
-         <%if current_user.admin? %>  
-      <td><%= link_to 'Edit', edit_answer_path(respuesta), class: "btn btn-xs btn-primary" %></td>
+<% @proyectos.each do |proyecto| %>   
+        <%if proyecto.id == request.path.split('.').last.to_f%>
+               <% proyecto.answers.each do |respuesta| %>
+                <tr>
+                  <td><%= @pregunta.find(respuesta.question_id).question %></td>
+                  <td><%= respuesta.answer %></td>
+                    <td><%= respuesta.value %></td>
+
+                  <td><%= link_to 'Show', answer_path(respuesta) %></td>
+                     <%if current_user.admin? %>  
+                  <td><%= link_to 'Edit', edit_answer_path(respuesta), class: "btn btn-xs btn-primary" %></td>
+                    <%end%>
+
+        </tr>
+            <% end %>
         <%end%>
+<%end%>
     
-    </tr>
-  <% end %>
 </table>

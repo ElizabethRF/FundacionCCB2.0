@@ -34,6 +34,7 @@ class AnswersController < ApplicationController
     def index
         @respuestas = Answer.all
         @pregunta = Question.all
+        @proyectos = Project.all
     end 
     
     def edit
